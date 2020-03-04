@@ -228,12 +228,13 @@ line-height: 40px;
 }
 .col-md-6{
     /* border: 2px solid black; */
-    padding:10px;
+    padding:10px 14px;
     margin-left:16%;
 }
-.row{
-  padding-top: 20%;
-}
+/* .row{
+  padding-top: 10px;
+
+} */
 #show-advise{
   display: none;
   font-family: 'Athiti', sans-serif;
@@ -241,5 +242,8 @@ line-height: 40px;
 }
 .button{
   font-size: 17px;
-  color:black;
+  /* color:black; */
+}
+footer{
+  padding-top: 15%;
 }
