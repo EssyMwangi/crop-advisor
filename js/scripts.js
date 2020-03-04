@@ -42,26 +42,16 @@ function changeSlides(n){
 function currentslide(n){
   showSlides(slideIndexJS = n)
 }
-
 function showSlides(n){
   var i;
-
   var slidesJS = document.getElementsByClassName("my-slides");
 
   if(n > slidesJS.length) {slideIndexJS = 1;}
 
   if(n < 1) {slideIndexJS = slidesJS.length;}
-
-
   for (i=0; i < slidesJS.length; i++){
     slidesJS[i].style.display = "none";
   }
-
   slidesJS[slideIndexJS-1].style.display = "block";
 
-
-
-
 }
-
-

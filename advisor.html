@@ -12,6 +12,16 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
   <link href="./css/advisor.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/icomoon.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="./css/wickedcss.min.css" rel="stylesheet" />
+ 
+  <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index:10">
@@ -39,7 +49,70 @@
       <div class="line3"></div>
     </div>
   </nav>
-  <br><br>
+  <div class="container">
+    <div class="overlay">
+      <h2>ADVISORY PAGE</h2>
+      <p>
+        Select your region below, follow the prompt and we will advise you on
+        which crops to grow.
+      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <form>
+            <div class="dropdown">
+              <button class="button bg-danger"
+                class="btn btn-default dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                Region/Province <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a class="test" tabindex="-1" href="#"
+                    >Nyanza <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" id="migori"value="migori">Migori</a></li>
+                    <li><a href="#" id="kisumu"value="kisumu">Kisumu</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="test" tabindex="-1" href="#"
+                    >Western <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" id="busia" value="busia">Busia</a></li>
+                    <li><a href="#" id="kakamega"value="kakamega">Kakamega</a></li>
+                  </ul>
+                </li>
+                
+                <li class="dropdown-submenu">
+                  <a class="test" tabindex="-1" href="#"
+                    >Rift Valley <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" id="kitale" >Kitale</a></li>
+                    <li><a href="#" id="kericho">Kericho</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="show-advise">
+            <h2>The best crop for this region is:</h2>
+            <p>crop :<span class="cropname"></span></p>
+            <p>Duration :<span class="duration"></span></p>
+            <p>Climate :<span class="climateCondition"></span></p>
+            <p>Suitable soil type :<span class="soiltype"></span></p>
+            <p>Click for<a href="description.html">  crop description</a></li></p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -91,5 +164,9 @@
   <script src="./js/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./js/scripts.js"></script>   
-</body>
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>
