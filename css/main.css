@@ -128,7 +128,7 @@ h2{
   padding: 80px 0;
 }
 .segment-one h3 {
-  font-family: courgette;
+  font-family: "Poppins";
   color:#96E072;
   letter-spacing: 3px;
   margin: 10px 0;
@@ -212,7 +212,7 @@ line-height: 40px;
   text-align: center;
   background: #134611;
   line-height: 75px;
-  color: grey;
+  color: white;
 }
 
 
@@ -332,7 +332,7 @@ line-height: 40px;
   bottom: 0;
   z-index: 1;
   color: white;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Poppins";
   font-size: 16px;
   text-align: center;
   width: 100%;
@@ -464,14 +464,17 @@ line-height: 40px;
 }
 /* gallery */
 .gallery2Container {
-  padding: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   width: 100%;
   display: grid;
   grid-auto-flow: dense;
   grid-template:  "1fr 1fr 1fr 1fr 1fr" 33.33vh
-                  "1fr 1fr 1fr 1fr 1fr" 33.33vh
                   "1fr 1fr 1fr 1fr 1fr" 33.33vh;
-  grid-gap: 4px;
+                  /* "1fr 1fr 1fr 1fr 1fr" 33.33vh; */
+  grid-gap: 10px;
   box-sizing: border-box;
 }
 .gallery2Container .box {
@@ -500,9 +503,9 @@ line-height: 40px;
   grid-row: span 2;
 }
 .gallery2Container .box.b,
-.gallery2Container .box.f,
-.gallery2Container .box.h,
-.gallery2Container .box.j{
+.gallery2Container .box.f{
+/* .gallery2Container .box.h,
+.gallery2Container .box.j{ */
   grid-column: span 2;
 }
 @media(max-width: 991px) {
@@ -523,6 +526,6 @@ line-height: 40px;
                       "1fr 1fr" 200px
                       "1fr 1fr" 200px;
 }
-.gallery2Container .box.h {
+/* .gallery2Container .box.h {
   grid-column: span 1;
-}
+} */
