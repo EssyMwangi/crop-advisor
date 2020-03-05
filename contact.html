@@ -13,6 +13,8 @@
   <link href="./css/contact.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/icomoon.css">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index:10" >
@@ -40,7 +42,39 @@
       <div class="line3"></div>
     </div>
   </nav>
-  <br><br>
+  <!-- Contact section -->
+  <section id="contact-section">
+    <div class="container">
+      <br><br><br>
+      <h1 class="contact-us">Contact Us</h1>
+      <br><br><br>
+      <p class="contact-paragraph">Email us and and get information on our latest news.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- left grid section -->
+          <div class="icon-styles">
+            <i id="marker" class="fa fa-map-marker"></i><span class="form-info">156 Ngong Lane Nairobi</span><br>
+            <i id="phone" class="fa fa-phone"></i><span class="form-info">Phone no +254 722000000</span><br>
+            <i id="envelope" class="fa fa-envelope"></i><span class="form-info">ukulimaHub@gmail.com</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Right grid section -->
+          <div>
+            <form>
+              <input type="text" id="first-name" placeholder="First Name" required>
+              <input type="text" id="last-name" placeholder="Last Name" required>
+              <input type="Email" id="email" placeholder="Email" required>
+              <input type="text" placeholder="Subject of this message" required>
+              <textarea name="message" id="comment" placeholder="Message" rows="5" required></textarea>
+              <button id="btn" class="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -90,7 +124,7 @@
 
   <script src="./js/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/scripts.js"></script>    
+  <script src="./js/contact.js"></script>    
 </body>
 </html>
 
