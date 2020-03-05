@@ -3,7 +3,6 @@
   padding:0px;
   box-sizing: border-box;
 }
-
 nav{
   display: flex;
   justify-content:space-around;
@@ -12,12 +11,13 @@ nav{
   font-family: "Poppins";
   background-color: #134611;
 }
-
 .logo{
   color: #96F072;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   font-size: 20px;
+  font-family: 'Trade Winds', cursive;
+  padding: 15px;
 }
 .nav-links{
   display: flex;
@@ -35,7 +35,7 @@ nav{
 .nav-links a{
   color: #FEFCFB;
   text-decoration: none ;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -49,17 +49,12 @@ nav{
   background-color:#FEFCFB;
   margin: 5px;
   transition: all 0.3s ease;
-
 }
-
 @media screen and (max-width:1024px){
   .nav-links{
     width: 60%;
   }
-
 }
-
-
 @media screen and (max-width:768px){
   body{
     overflow-x: hidden;
@@ -77,20 +72,14 @@ nav{
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-  /* .nav-links li{
-    opacity: 0;
-
-  } */
+}
   .burger{
     display: block;
   }
- 
-}
+
 .nav-active{
   transform: translateX(0%);
 }
-
-
 @keyframes navlinkFade{
   from{
     opacity: 0;
@@ -101,10 +90,8 @@ nav{
     transform: translateX(0px);
   }
 }
-
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px,6px);
-
 }
 .toggle .line2{
   opacity: 0;
@@ -112,7 +99,6 @@ nav{
 .toggle .line3{
   transform: rotate(45deg) translate(-5px,-6px);
 }
-
 p{
   color:#999 ;
   line-height: 25px;
@@ -121,7 +107,7 @@ h2,h3{
    color: #fff;
 }
 h2{
-  font-size: 18px;
+  font-size: 15px;
 }
 .footer-top{
   background: #134611;
@@ -140,7 +126,7 @@ h2{
 }
 .segment-two h2:before{
   content: '|';
-  color: #96e072;
+  color: #96E072;
   padding-right: 10px;
 }
 .segment-two ul{
@@ -163,7 +149,7 @@ line-height: 40px;
 }
 .segment-three h2:before{
   content: '|';
-  color: #96e072;
+  color: #96E072;
   padding-right: 10px;
 }
 .segment-three a{
@@ -177,7 +163,6 @@ line-height: 40px;
   font-size: 20px;
   color: #fff;
   padding: 10px 12px;
-
 }
 .segment-four h2{
   color: #fff;
@@ -186,22 +171,31 @@ line-height: 40px;
 }
 .segment-four h2:before{
   content: '|';
-  color: #96e072;
+  color: #96E072;
   padding-right: 10px;
 }
 .segment-four form input[type=submit]{
-  background: #3DA35D;
+  background: green;
   border: none;
   padding: 3px 15px;
   color: #fff;
   text-transform: uppercase;
 }
+.footer-top a{
+  color: green;
+  text-decoration: none ;
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer-top li>a:hover {
+  color:green;
+  text-decoration: none;
+}
 .footer-bottom-text{
   text-align: center;
   background: #134611;
-  line-height: 75px;
+  line-height: 30px;
 }
-
 @media only screen and (min-width:768px) and (max-width: 991px){
   .md-mb-30{
     margin-bottom: 30px;
@@ -215,6 +209,12 @@ line-height: 40px;
     padding: 50px 0;
   }
 }
+/* advisor css begins here */
+.container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/*dropdown submenu*/
 .dropdown-submenu {
   position: relative;
 }
@@ -223,27 +223,35 @@ line-height: 40px;
   left: 100%;
   margin-top: -1px;
 }
-.col-md-4{
-    /* border: 2px solid black; */
+.col-md-4 button{
+    border: 2px dotted green;
 }
 .col-md-6{
-    /* border: 2px solid black; */
-    padding:10px 14px;
+    box-sizing: border-box;
+    padding:10px;
     margin-left:16%;
 }
-/* .row{
-  padding-top: 10px;
-
-} */
 #show-advise{
   display: none;
-  font-family: 'Athiti', sans-serif;
-  font-size: large;
 }
-.button{
-  font-size: 17px;
-  /* color:black; */
+.one{
+  color: green;
 }
-footer{
-  padding-top: 15%;
+#show-advise h2{
+  color:green;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.advisor-header{
+  text-align: center;
+  color: green;
+}
+.overlay1 p{
+  color: black;
+}
+.advisor{
+  color: blue;
+}
+bold{
+  color: #134611;
 }

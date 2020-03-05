@@ -7,39 +7,39 @@
   <title>Advisor</title>
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poppins&display=swap" rel="stylesheet">
   <link href="./css/bootstrap.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- new links -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+  <!--end of new links -->
   <link href="./css/wickedcss.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
   <link href="./css/advisor.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/icomoon.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-  />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top" style="z-index:10">
     <div class="logo">
-      <h4>UKULIMA HUB</h4>
+      UKULIMA HUB
     </div>
     <ul class="nav-links">
       <li>
-        <a href="index.html">home</a>
+        <a href="index.html">Home</a>
       </li>
       <li>
-        <a href="description.html">description</a>
+        <a href="description.html">Description</a>
       </li>
       <li>
-        <a href="advisor.html">advisor</a>
+        <a href="advisor.html">Advisor</a>
       </li>
       <li>
-        <a href="contact.html">contact</a>
+        <a href="contact.html">Contact</a>
       </li>
-      
     </ul>
     <div class="burger">
       <div class="line1"></div>
@@ -49,68 +49,125 @@
   </nav>
   <div class="container">
     <div class="overlay">
-      <h2>ADVISORY PAGE</h2>
-      <p>
-        Select your region below, follow the prompt and we will advise you on
+      <h1 class="advisor-header">ADVISORY PAGE</h1>
+      <br><br>
+      <div class="row">
+        <figure class="col-md-4">
+          <div class="view overlay">
+            <div class="image-frame">
+              <img src="./images/advisory1.jpg" class="img-fluid" alt="sample img">
+            </div>
+            <div class="mask flex-center rgba-green-strong">
+              <p class="white-text">A woman working on a tea plantation</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="col-md-4">
+          <div class="view overlay">
+            <div class="image-frame">
+              <img src="./images/advisory2.jpg" class="img-fluid" alt="sample img">
+            </div>
+            <div class="mask flex-center rgba-blue-light">
+              <p class="white-text">Image of a farm with crop plantation</p>
+            </div>
+          </div>
+        </figure>
+        <figure class="col-md-4">
+          <div class="view overlay">
+            <div class="image-frame">
+              <img src="./images/advisory3.jpg" class="img-fluid" alt="sample img">
+            </div>
+            <div class="mask flex-center rgba-green-light">
+              <p class="white-text">Image of wheat plantation</p>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <p class="advisor">
+        Select  region and the exact place of your region below, follow the  prompt and we will advise you on
         which crops to grow.
       </p>
       <div class="row">
         <div class="col-md-4">
           <form>
-            <div class="dropdown">
-              <button class="button "
-                class="btn btn-default dropdown-toggle"
-                type="button"
-                data-toggle="dropdown"
-              >
-                Region/Province <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li class="dropdown-submenu">
-                  <a class="test" tabindex="-1" href="#"
-                    >Nyanza <span class="caret"></span
-                  ></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#" id="migori"value="migori">Migori</a></li>
-                    <li><a href="#" id="kisumu"value="kisumu">Kisumu</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="test" tabindex="-1" href="#"
-                    >Western <span class="caret"></span
-                  ></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#" id="busia" value="busia">Busia</a></li>
-                    <li><a href="#" id="kakamega"value="kakamega">Kakamega</a></li>
-                  </ul>
-                </li>
-                
-                <li class="dropdown-submenu">
-                  <a class="test" tabindex="-1" href="#"
-                    >Rift Valley <span class="caret"></span
-                  ></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#" id="kitale" >Kitale</a></li>
-                    <li><a href="#" id="kericho">Kericho</a></li>
-                  </ul>
-                </li>
-              </ul>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="btn-group">
+                    <a id="dLabel" role="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" href="">
+                      Region/Province
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item" tabindex="-1" href="#">
+                          Nyanza
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" id="migori" tabindex="-1" href="#">Migori</a></li>
+                          <li><a class="dropdown-item" id="kisumu" tabindex="-1" href="#">Kisumu</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item" tabindex="-1" href="#">
+                          Western
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" id="busia" tabindex="-1" href="#">Busia</a></li>
+                          <li><a class="dropdown-item" id="kakamega" tabindex="-1" href="#">Kakamega</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-divider"></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item" tabindex="-1" href="#">
+                          Rift Valley
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" id="kitale" tabindex="-1" href="#">Kitale</a></li>
+                          <li><a class="dropdown-item" id="kericho" tabindex="-1" href="#">Kericho</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="dropdown-divider"></li>
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item" tabindex="-1" href="#">
+                          Eastern
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" id="machakos" tabindex="-1" href="#">Machakos</a></li>
+                          <li><a class="dropdown-item" id="kitui" tabindex="-1" href="#">Kitui</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </form>
         </div>
         <div class="col-md-6">
           <div id="show-advise">
             <h2>The best crop for this region is:</h2>
-            <p>crop :<span class="cropname"></span></p>
-            <p>Duration :<span class="duration"></span></p>
-            <p>Climate :<span class="climateCondition"></span></p>
-            <p>Suitable soil type :<span class="soiltype"></span></p>
-            <p>Click for<a href="description.html">  crop description</a></li></p>
-          </div> 
+            <p>
+              <bold>crop</bold> : <span class="cropname"></span>
+            </p>
+            <p>
+              <bold>Duration</bold> : <span class="duration"></span>
+            </p>
+            <p>
+              <bold>Climate</bold>: <span class="climateCondition"></span>
+            </p>
+            <p>
+              <bold>Suitable soil type</bold> : <span class="soiltype"></span>
+            </p>
+            <p>For crop description<a href="description.html"> click here </a></li>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <br><br>
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -120,51 +177,41 @@
             <p>We are here for you.</p>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-md-30">
-            <h2>crops</h2>
+            <h2>Crops</h2>
             <p>We have a variety of crops</p>
             <ul>
-              <li><a href="#">Event</a></li>
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Hosting</li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Blog</a></li>
-              
+              <li><a href="#event">Event</a></li>
+              <li><a href="#support">Support</a></li>
+              <li><a href="#hosting">Hosting</li>
+              <li><a href="#career">Career</a></li>
+              <li><a href="#blog">Blog</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 segment-three segment-two md-mb-30 sm-md-30">
-            <h2>Follow us</h2> 
+            <h2>Follow us</h2>
             <p>Social media</p>
             <div class="colorlib-social-icons">
               <a href="https://twitter.com/login"><i class="icon-twitter"></i></a>
               <a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
               <a href="https://linkedin.com/"><i class="icon-linkedin"></i></a>
               <a href="https://dribbble.com/"><i class="icon-dribbble"></i></a>
-          </div>
+            </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12 segment-four segment-two md-mb-30 sm-md-30">
             <h2>Our Newsletter</h2>
             <p></p>
-            <form action="">
-              <input type="email">
-              <input type="submit" value="subscribe">
-
+            <form onsubmit="return false" action="">
+              <input id="email" type="email">
+              <input type="submit" onclick="subscribe()" value="subscribe">
             </form>
           </div>
-
         </div>
-       
       </div>
     </div>
     <p class="footer-bottom-text">All Rights Reserved by &copy;Ukulima Hub.2020 </p>
   </footer>
-  
-
   <script src="./js/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/scripts.js"></script>   
-
-    <script src="./js/jquery-3.4.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/scripts.js"></script>
-  </body>
+  <script src="./js/advisor.js"></script>
+</body>
 </html>

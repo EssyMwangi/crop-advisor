@@ -2,11 +2,8 @@ const navSlide =() => {
   const burger =document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks =document.querySelectorAll('nav-link li');
-
   burger.addEventListener('click',()=>{
-
     nav.classList.toggle('nav-active');
-
     navLinks.forEach((link,index) => {
       if(link.style.animation){
           link.style.animation=''
@@ -16,7 +13,6 @@ const navSlide =() => {
     //Burger animation//
     burger.classList.toggle('toggle');
   });
-
 }
 
 navSlide();
@@ -42,6 +38,7 @@ function changeSlides(n){
 function currentslide(n){
   showSlides(slideIndexJS = n)
 }
+
 function showSlides(n){
   var i;
   var slidesJS = document.getElementsByClassName("my-slides");
@@ -55,3 +52,4 @@ function showSlides(n){
   slidesJS[slideIndexJS-1].style.display = "block";
 
 }
+
