@@ -114,7 +114,7 @@ nav{
 }
 
 p{
-  color:#999 ;
+  color: white ;
   line-height: 25px;
 }
 h2,h3{
@@ -133,8 +133,12 @@ h2{
   letter-spacing: 3px;
   margin: 10px 0;
 }
+.segment-one p{
+  color: grey;
+}
+
 .segment-two h2{
-  color: #fff;
+  color: white;
   font-family: "Poppins";
   text-transform: uppercase;
 }

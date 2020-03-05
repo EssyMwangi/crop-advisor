@@ -113,10 +113,10 @@ nav{
   transform: rotate(45deg) translate(-5px,-6px);
 }
 
-p{
+/* p{
   color:#999 ;
   line-height: 25px;
-}
+} */
 h2,h3{
    color: #fff;
 }
@@ -128,10 +128,22 @@ h2{
   padding: 80px 0;
 }
 .segment-one h3 {
-  font-family: courgette;
+  font-family: "Poppins";
   color:#96E072;
   letter-spacing: 3px;
   margin: 10px 0;
+}
+.segment-one p {
+  color: grey;
+
+}
+.segment-two p {
+  color: grey;
+
+}
+.segment-three p {
+  color: grey;
+
 }
 .segment-two h2{
   color: #fff;
@@ -140,7 +152,7 @@ h2{
 }
 .segment-two h2:before{
   content: '|';
-  color:#96e072 ;
+  color: #96e072;
   padding-right: 10px;
 }
 .segment-two ul{
@@ -200,7 +212,9 @@ line-height: 40px;
   text-align: center;
   background: #134611;
   line-height: 75px;
+  color: white;
 }
+
 
 @media only screen and (min-width:768px) and (max-width: 991px){
   .md-mb-30{
@@ -215,3 +229,303 @@ line-height: 40px;
     padding: 50px 0;
   }
 }
+
+/* html,body{
+  padding: 10px 0 0 0;
+  margin: 0;
+} */
+.galleryContainer{
+  width: 100%;
+  height: 500px;
+  max-width: 1000px;
+  margin: auto;
+  user-select: none;
+  box-shadow: 0px 0px 2px 1px #96e072;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  background-color: gainsboro;
+  position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../images/playPause.png);
+  background-repeat: no-repeat;
+  z-index: 5;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+  opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+  display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+  width: 50px;
+  background: #00000036;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transition: background 0.5s;
+  height: 72px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+  left: auto;
+  right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+  background: #000000a8;
+  cursor: pointer;
+}
+.galleryContainer .arrow{
+  display: inline-block;
+  border: 3px solid white;
+  width: 10px;
+  height: 10px;
+  border-left: none;
+  border-bottom: none;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+  transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+  transform: rotateZ(45deg);
+}
+
+
+.galleryContainer .slideShowContainer>.captionTextHolder{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  font-family: "Poppins";
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  background: #00000047;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  opacity: .8;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+  margin: 0;
+}
+
+.galleryContainer #dotsContainer{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: #3DA35D ;
+  cursor: pointer;
+  transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+  margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+  background-color: #96e072;;
+}
+
+.galleryContainer .moveLeftCurrentSlide{
+  animation-name: moveLeftCurrent;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{
+  animation-name: moveLeftNext;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+  from {margin-left: 0;opacity: 1;}
+  to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+  from {margin-left: 100%;opacity: 1;}
+  to {margin-left: 0%;opacity: 1;}
+}
+
+
+.galleryContainer .moveRightCurrentSlide{
+  animation-name: moveRightCurrent;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+  animation-name: moveRightPrev;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+  from {margin-left: 0;opacity: 1;}
+  to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+  from {margin-left: -100%;opacity: 1;}
+  to {margin-left: 0%;opacity: 1;}
+}
+.slideTextFromBottom {
+  animation-name: slideTextFromBottom;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+  from {opacity: 0;margin-top: 100px}
+  to {opacity: 1;margin-top: 0px;}
+}
+.slideTextFromTop {
+  animation-name: slideTextFromTop;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+  from {opacity: 0;margin-top: -100px}
+  to {opacity: 1;margin-top: 0px;}
+}
+
+/* about us */
+.sectionpadding {
+  padding: 60px 0px;
+}
+#about {
+  background-color: #96E072;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -3px;
+  border-radius: 20px;
+  /* padding: 20%; */
+ 
+
+}
+#title-text{
+  padding-top: 5px;
+  border-right: 5px solid #3e8914;
+  font-size: 40px;
+  font-family: 'Poppins';
+  padding-right: 5px;
+  color: black;
+}
+
+.about-text {
+  color: white;
+  padding-top: 8px;
+  font-family: 'Poppins';
+  font-size: 18px;
+
+}
+/* gallery */
+.gallery2Container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template:  "1fr 1fr 1fr 1fr 1fr" 33.33vh
+                  "1fr 1fr 1fr 1fr 1fr" 33.33vh;
+                  /* "1fr 1fr 1fr 1fr 1fr" 33.33vh; */
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+.gallery2Container .box {
+  position: relative;
+  background: #96e072;
+}
+.portrait {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.landscape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position:center;
+}
+.gallery2Container .box.a {
+  grid-row: span 2;
+}
+.gallery2Container .box.b,
+.gallery2Container .box.f{
+/* .gallery2Container .box.h,
+.gallery2Container .box.j{ */
+  grid-column: span 2;
+}
+@media(max-width: 991px) {
+  .gallery2Container {
+      grid-template:  "1fr 1fr 1fr" 250px
+                      "1fr 1fr 1fr" 250px
+                      "1fr 1fr 1fr" 250px
+                      "1fr 1fr 1fr" 250px
+                      "1fr 1fr 1fr" 250px;
+}
+@media(max-width: 768px) {
+  .gallery2Container {
+      grid-template:  "1fr 1fr" 200px
+                      "1fr 1fr" 200px
+                      "1fr 1fr" 200px
+                      "1fr 1fr" 200px
+                      "1fr 1fr" 200px
+                      "1fr 1fr" 200px
+                      "1fr 1fr" 200px;
+}
+/* .gallery2Container .box.h {
+  grid-column: span 1;
+} */
