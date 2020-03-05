@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home</title>
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="./css/bootstrap.css" rel="stylesheet">
   <link href="./css/wickedcss.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +42,80 @@
       <div class="line3"></div>
     </div>
   </nav>
-  <br><br>
+  <div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="images/food-red-agriculture-green-39479.jpg">
+            <p class="captionText">fresh chillies from Bungoma</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/agriculture-blur-bright-cereal-614006.jpg">
+            <p class="captionText">Vibrant corn stalk in the depths of Uasin Gishu</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/photo-of-tractor-on-fields-1033716.jpg">
+            <p class="captionText">The very beautiful Nandi plains</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/photo-1535090467336-9501f96eef89 (1).jpeg">
+            <p class="captionText">One of our Ukulima farmers</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<br><br><br>
+<div class="slideRight">
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 text-right">
+        <h2 id="title-text">
+          <p><em>About Us  </em></p>
+        </h2>
+      </div>
+      <div class="col-md-9 text-center">
+        <div class="about-text">
+          <p>Welcome to Ukulima Hub! We are you sole provider for anything you need to know about farming.
+             As Ukulima Hub, we aim to tell you what kind of crop to plant depending on where you are here in Kenya.</p>
+          <p>Different kinds crops need a specific kind of climate in order for them to flourish. Now here is where
+              we come in, feel free to explore our website and get to know the ins and outs of farming, you'll be guaranteed
+              to get the best results since all our research has been done by agricultural experts. <em>Happy Farming!!</p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+  </div>
+</section>
+</div>
+<br><br><br>
+
+<div class="gallery2Container">
+  <div class="box a">
+    <img src="./images/man2.jpeg" class="portrait">
+  </div>
+  <div class="box d">
+    <img src="./images/alot2.jpeg" class="landscape">
+  </div>
+  <div class="box c">
+    <img src="./images/jembe.jpeg" class="landscape">
+  </div>
+  <div class="box b">
+    <img src="./images/greenhouse.jpeg" class="landscape">
+  </div>
+  <div class="box e">
+    <img src="./images/sun.jpeg" class="landscape">
+  </div>
+  <div class="box f">
+    <img src="./images/wheat.jpeg" class="landscape">
+  </div>
+   <div class="box g">
+    <img src="./images/farmer3.jpeg" class="landscape">
+  </div>
+</div>
+  
   <footer>
     <div class="footer-top">
       <div class="container">
@@ -90,6 +165,6 @@
 
   <script src="./js/jquery-3.4.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="./js/scripts.js"></script>  
+  <script src="./js/main.js"></script>  
 </body>
 </html>
