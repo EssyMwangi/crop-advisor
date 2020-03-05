@@ -21,6 +21,7 @@ const navSlide =() => {
 
 navSlide();
 
+
 function openModal(){
   document.getElementById('my-modal').style.display ="inline-flex";
 }
