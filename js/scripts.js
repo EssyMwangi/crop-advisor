@@ -2,11 +2,8 @@ const navSlide =() => {
   const burger =document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
   const navLinks =document.querySelectorAll('nav-link li');
-
   burger.addEventListener('click',()=>{
-
     nav.classList.toggle('nav-active');
-
     navLinks.forEach((link,index) => {
       if(link.style.animation){
           link.style.animation=''
@@ -16,9 +13,7 @@ const navSlide =() => {
     //Burger animation//
     burger.classList.toggle('toggle');
   });
-
 }
-
 navSlide();
 
 
@@ -45,23 +40,15 @@ function currentslide(n){
 
 function showSlides(n){
   var i;
-
   var slidesJS = document.getElementsByClassName("my-slides");
 
   if(n > slidesJS.length) {slideIndexJS = 1;}
 
   if(n < 1) {slideIndexJS = slidesJS.length;}
-
-
   for (i=0; i < slidesJS.length; i++){
     slidesJS[i].style.display = "none";
   }
-
   slidesJS[slideIndexJS-1].style.display = "block";
 
-
-
-
 }
-
 
