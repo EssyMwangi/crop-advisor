@@ -345,13 +345,18 @@ h2{
 .title{
   font-size: 24px;
   margin: 20px;
+  padding-top: 10px;
+  color: #494848;
+}
+.section-padding{
+  padding-top :10%;;
 }
 #my-grid{
   margin-top: 50px;
 }
-.grid-padding{
+/* .grid-padding{
   padding: 0 8px;
-}
+} */
 .grid-padding img{
   margin-bottom: 15px;
   transition: 0.5s ease;
@@ -464,7 +469,7 @@ h2{
 }
 .segment-two h2:before{
   content: '|';
-  color: #96e072;
+  color:#96e072 ;
   padding-right: 10px;
 }
 .segment-two ul{
@@ -526,6 +531,11 @@ line-height: 40px;
   line-height: 75px;
 }
 
+.footerh{
+  font-size: 18px;
+}
+
+
 @media only screen and (min-width:768px) and (max-width: 991px){
   .md-mb-30{
     margin-bottom: 30px;
@@ -538,4 +548,101 @@ line-height: 40px;
   .footer-top{
     padding: 50px 0;
   }
+}
+
+
+.vtabs{
+  max-width: 800px;
+  padding: -50%;
+  margin: 50px auto; 
+  text-align: center;
+  position: relative
+
+  
+}
+.vtabs input{display:none}
+.vtabs label{
+  display: block;
+  width: 20%;
+  padding: 15px;
+  color: #a2a2a2;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  border-left: 5px solid #dcdcdc ;
+  transition: .3s ease
+}
+.vtabs label:hover{
+  cursor: pointer;
+  color:#404040
+}
+.vtabs input:checked + label{
+  color:#404040;
+  border-left: 5px solid #00c4ff;
+}
+.vtabs #tab1:checked ~ .vtab-content #content1,
+.vtabs #tab2:checked ~ .vtab-content #content2,
+.vtabs #tab3:checked ~ .vtab-content #content3,
+.vtabs #tab4:checked ~ .vtab-content #content4,
+.vtabs #tab5:checked ~ .vtab-content #content5
+/* .vtabs #tab6:checked ~ .vtab-content #content6,
+.vtabs #tab7:checked ~ .vtab-content #content7,
+.vtabs #tab8:checked ~ .vtab-content #content8*/{ 
+  display:block
+}
+.vtabs .vtab-content{
+  position:absolute;
+  top: 0;
+  max-width:65%;
+  right: 20px
+
+}
+.vtabs .vtab content div{
+  display: none
+}
+.vtabs img{
+  max-width:550px;
+  width :100%;
+  border-radius: 15px
+}
+#content1{
+  display: none;
+  
+
+}
+#content2{
+  display: none;
+}
+#content3{
+  display: none;
+
+}
+#content4{
+  display: none;
+
+}
+#content5{
+  display: none;
+
+}
+/* #content6{
+  display: none;
+}
+#content7{
+  display: none;
+}
+#content8{
+  display: none;
+} */
+
+
+h5{
+  text-align: center;
+  font-weight: 800;
+  font-style: oblique;
+  font-display: bold;
+}
+h2{
+  font-size: 35px;
+  font-display: bold;
 }
