@@ -73,10 +73,9 @@
           <div class="col-md-3 col-sm-6 col-xs-12 segment-four segment-two md-mb-30 sm-md-30">
             <h2>Our Newsletter</h2>
             <p></p>
-            <form action="">
-              <input type="email">
-              <input type="submit" value="subscribe">
-
+            <form onsubmit="return false" action="">
+              <input id="email" type="email">
+              <input type="submit" onclick="subscribe()" value="subscribe">
             </form>
           </div>
 
