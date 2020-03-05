@@ -560,6 +560,9 @@ line-height: 40px;
 
   
 }
+#imagefit{
+  padding-bottom: 2%;
+}
 .vtabs input{display:none}
 .vtabs label{
   display: block;
