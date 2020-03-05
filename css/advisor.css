@@ -1,3 +1,4 @@
+
 *{
   margin:0px;
   padding:0px;
@@ -14,10 +15,8 @@ nav{
 .logo{
   color: #96F072;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   font-size: 20px;
-  font-family: 'Trade Winds', cursive;
-  padding: 15px;
 }
 .nav-links{
   display: flex;
@@ -35,7 +34,7 @@ nav{
 .nav-links a{
   color: #FEFCFB;
   text-decoration: none ;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -72,11 +71,13 @@ nav{
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-}
+  .nav-links li{
+    opacity: 0;
+  }
   .burger{
     display: block;
   }
-
+}
 .nav-active{
   transform: translateX(0%);
 }
@@ -107,7 +108,7 @@ h2,h3{
    color: #fff;
 }
 h2{
-  font-size: 15px;
+  font-size: 18px;
 }
 .footer-top{
   background: #134611;
@@ -175,26 +176,16 @@ line-height: 40px;
   padding-right: 10px;
 }
 .segment-four form input[type=submit]{
-  background: green;
+  background: #3DA35D;
   border: none;
   padding: 3px 15px;
   color: #fff;
   text-transform: uppercase;
 }
-.footer-top a{
-  color: green;
-  text-decoration: none ;
-  font-weight: bold;
-  font-size: 14px;
-}
-.footer-top li>a:hover {
-  color:green;
-  text-decoration: none;
-}
 .footer-bottom-text{
   text-align: center;
   background: #134611;
-  line-height: 30px;
+  line-height: 75px;
 }
 @media only screen and (min-width:768px) and (max-width: 991px){
   .md-mb-30{
@@ -209,6 +200,7 @@ line-height: 40px;
     padding: 50px 0;
   }
 }
+
 /* advisor css begins here */
 .container {
   padding-top: 30px;
