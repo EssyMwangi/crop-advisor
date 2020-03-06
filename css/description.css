@@ -270,8 +270,6 @@ nav{
   }
 
 }
-
-
 @media screen and (max-width:768px){
   body{
     overflow-x: hidden;
@@ -453,8 +451,6 @@ h2{
   font-weight: bold;
 }
 
-
-
 .footer-top{
   background: #134611;
   padding: 80px 0;
@@ -556,8 +552,8 @@ line-height: 40px;
 }
 
 input{
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
   width: 70%;
   background-color: rgba(136,133,133,0.5);
   color: #fff;
@@ -565,7 +561,6 @@ input{
   outline: none;
   padding-bottom: 10px;
 }
-
 
 @media only screen and (min-width:768px) and (max-width: 991px){
   .md-mb-30{

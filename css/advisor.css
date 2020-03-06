@@ -215,10 +215,12 @@ line-height: 40px;
   margin-left: 3%;
   border: 2px solid rgba(190,190,190);
   color: rgba(190,190,190);
+  margin-top: 10px;
 }
 
 input{
-  padding: 10px;
+  padding: 5px;
+  margin-bottom: 8px;
   /* margin: 10px; */
   width: 70%;
   background-color: rgba(136,133,133,0.5);
