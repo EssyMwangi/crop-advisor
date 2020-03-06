@@ -60,6 +60,6 @@ If you run into any issues or have questions, ideas or concerns contact <ukulima
 
 ### License
 *MIT*
-[LICENSE MIT](./LICENSE)
+[LICENSE MIT](./license.txt)
 
 ---
