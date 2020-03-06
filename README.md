@@ -23,6 +23,8 @@
 
 ## Live demo
 
+<https://essymwangi.github.io/crop-advisor/>
+
 ---
 
 
