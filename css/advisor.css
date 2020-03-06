@@ -200,6 +200,35 @@ line-height: 40px;
   background: #134611;
   line-height: 75px;
 }
+
+.submit{
+  width: 40%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3%;
+  border: 2px solid rgba(190,190,190);
+  color: rgba(190,190,190);
+}
+
+input{
+  padding: 10px;
+  /* margin: 10px; */
+  width: 70%;
+  background-color: rgba(136,133,133,0.5);
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+
+
 @media only screen and (min-width:768px) and (max-width: 991px){
   .md-mb-30{
     margin-bottom: 30px;

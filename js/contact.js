@@ -17,9 +17,20 @@ const navSlide =() => {
 navSlide();
 $(document).ready(function(){
     $("button#btn").click(function(){
-        var email = $("input#email").val();
+        var email = $("input#email-1").val();
         var name = $("input#first-name").val();
         var message = $("input#comment").val();
         alert("Thank you " + name + " for reaching out to us. We value your feedback. You will receive a message shortly at " + email + ".");
     });
 })
+
+
+// subscribe button
+function subscribe(){
+  var email=document.getElementById("email").value
+   if (email==""){
+     alert("Enter your email first to subscribe")
+   }else{
+     alert("You have successful subscribed to Ukulima hub weekly newsletter")
+   }
+}
