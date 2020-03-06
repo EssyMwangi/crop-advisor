@@ -107,3 +107,13 @@ function playPauseSlides() {
         playPauseBtn.style.backgroundPositionY="-33px"
     }
 }
+
+// subscribe button
+function subscribe(){
+    var email=document.getElementById("email").value
+     if (email==""){
+       alert("Enter your email first to subscribe")
+     }else{
+       alert("You have successful subscribed to Ukulima hub weekly newsletter")
+     }
+  }

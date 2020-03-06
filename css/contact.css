@@ -2,6 +2,7 @@
   margin:0px;
   padding:0px;
   box-sizing: border-box;
+  
 }
 
 nav{
@@ -234,7 +235,7 @@ line-height: 40px;
   letter-spacing: 2px;
 }
 #contact-section{
-  background-image: url(../images/contact-us-background.jpg);
+  background-image: url(../images/panorama-of-garden-pathway-2339180.jpg);
   background-size: cover;
   background-position: center;
   height: 80%;
@@ -282,6 +283,7 @@ input{
   border: none;
   outline: none;
 }
+
 input::placeholder{
   color: #fff;
 }
